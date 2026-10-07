@@ -1,0 +1,169 @@
+/* register.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header img {
+    width: 100%;
+    height: 300px;
+}
+
+.login-right {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.login-right a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+main {
+    height: 500px;
+    background-image: url('../images/login/login.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 800px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-register {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.tabs {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-item {
+    display: inline-block;
+    padding: 12px 30px;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    color: #666;
+    transition: all 0.3s;
+}
+
+.tab-item.on {
+    color: cornflowerblue;
+    border: 1px solid #ddd;
+    border-bottom-color: white;
+    border-radius: 4px 4px 0 0;
+    background: white;
+}
+
+form {
+    display: none;
+    margin-top: 20px;
+}
+
+form.show {
+    display: block;
+}
+
+.register li {
+    list-style: none;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.register li i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('../images/login/st-userlogin-bg.png') no-repeat;
+}
+
+.sj { 
+    background-position: -83px -150px; 
+}
+.yzm { 
+    background-position: -124px -150px; 
+}
+.pwd {
+     background-position: -165px -150px; 
+}
+.user { 
+    background-position: -206px -150px; 
+}
+
+input[type="text"], 
+input[type="password"] {
+    width: 275px;
+    height: 40px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 275px;
+    height: 40px;
+    background-color: rgb(36, 98, 212);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.right-section {
+    width: 240px;
+    padding-left: 40px;
+    border-left: 1px solid #636060;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-section p {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.other {
+    text-align: center;
+}
+
+.qq, .wx {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    background: url('../images/login/st-userlogin-bg.png') no-repeat;
+}
+
+.qq {
+     background-position: 0 -150px; 
+}
+.wx {
+     background-position: -40px -150px; 
+}
