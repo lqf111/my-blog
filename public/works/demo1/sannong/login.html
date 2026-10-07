@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>直击三农</title>
+    <link rel="stylesheet" href="css1/index.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css1/login.css">
+</head>
+<body>
+    <!-- 顶部开始 -->
+    <header>
+        <div class="login-right">
+            <a href="login.html" class="login-link">登录</a>
+            <a href="register.html" class="register-link">注册</a>
+        </div>
+        <img src="images/xlBanner.png" alt="农业科技有限公司">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">网站首页</a></li>
+            <li><a href="zhiji.html">直击三农</a></li>
+            <li><a href="#">行业知识</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">农业技术</a></li>
+            <!-- <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li> -->
+        </ul>
+    </nav>
+    <!-- 主体 -->
+    <main>
+         <div class="login">
+            <div class="tabs">
+                <span class="tab-item on" data-target="account-password-form">账号密码登录</span>
+                <span class="tab-item" data-target="verification-code-form">验证码登录</span>
+            </div>
+            <!-- 账号密码登录表单 -->
+            <form id="account-password-form" action="#" class="show">
+                <ul>
+                    <li><i class="user"></i><input type="text" placeholder="请输入账号"></li>
+                    <li><i class="pwd"></i><input type="password" placeholder="请输入密码"></li>
+                    <li><input type="submit" value="登录"></li>
+                </ul>
+            </form>
+            <!-- 验证码登录表单 -->
+            <form id="verification-code-form" action="#">
+                <ul>
+                    <li><i class="sj"></i><input type="text" placeholder="请输入手机号"></li>
+                    <li><i class="yzm"></i><input type="text" placeholder="验证码"></li>
+                    <li><input type="submit" value="登录"></li>
+                </ul>
+            </form>
+            <p>没有账号<a href="register.html">免费注册</a><a href="#">找回密码</a></p>
+            <div class="other">
+                <h3>使用其他方式登录</h3>
+                <i class="qq"></i>
+                <i class="wx"></i>k
+            </div>
+         </div>
+    </main>
+    <footer class="footer">
+        <ul>
+            <li><a href="#">&copy; 2023 农业科技有限公司. 保留所有权利.</a></li>
+            <li><a href="#">隐私政策</a></li>
+            <li><a href="#">使用条款</a></li>
+            <li><a href="#">网站地图</a></li>
+        </ul>
+    </footer>
+    <script src="js/login.js"></script>
+</body>
+</html>

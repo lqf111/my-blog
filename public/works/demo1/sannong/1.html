@@ -1,0 +1,71 @@
+.news{
+    width: 1300px;
+    margin: 0 auto;
+}
+.dongtai h3{
+    color: #ffffff;
+    background-image: linear-gradient(to right, green, yellow);
+
+    width: 650px;
+    text-align: left;
+    font-size: 25px;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 100px 50px 500px 50px/100px 50px 500px 50px;
+}
+.dongtai{
+    float: left;
+    width: 710px;
+}
+.dongtai ul{
+    margin-top: 30px;
+}
+.dongtai li{
+    height: 40px;
+    background: url('images/bpic_5.gif') no-repeat;
+    padding-left: 30px;
+    list-style: none;
+}
+.dongtai li span{
+    float: right;
+    font-size: 14px;
+    color:#666;
+}
+
+.dongtai img a{
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+    width: 300px;
+    height: 220px;
+    
+}
+.dongtai img{
+    width: 300px;
+    height: 220px;
+    margin-left: 30px;
+    box-shadow: 10px 10px 20px #666;
+    transition: all .5s;
+    display: block;
+    
+}
+/* 确保父容器有明确的宽度和高度，并且隐藏溢出的内容 */
+.dongtai .img-container {
+    width: 300px;
+    height: 220px;
+    overflow: hidden; /* 隐藏超出容器的内容 */
+    box-shadow: 10px 10px 20px #666; /* 将阴影应用到容器上 */
+    margin-right: 30px;
+    float: left;
+}
+.dongtai .text {
+    clear: both; /* 清除浮动，使文本显示在图片下方 */
+    margin-top: 10px; /* 根据需要调整间距 */
+}
+.dongtai img:hover {
+    transform: scale(1.2);
+}  
+.dongtai li a:hover{
+    color: #00851d;
+    
+}
