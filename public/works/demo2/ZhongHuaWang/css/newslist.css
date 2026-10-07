@@ -1,0 +1,15 @@
+.box{
+    height: 800px;
+    width: 1000px;
+    margin: 0 auto;
+}
+.news_list  ul li{
+    /* text-align: 50px; */
+    font-size: 18px;
+}
+tfoot a{
+    line-height: 10px;
+    padding: 10px;
+    /* border-bottom: 1px dashed #ccc; */
+    /* float: right; */
+}

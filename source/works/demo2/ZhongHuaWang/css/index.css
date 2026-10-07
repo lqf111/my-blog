@@ -1,0 +1,71 @@
+/* 首页样式 */
+/* 设置整个页面的基本样式 */
+body {
+    font-family: Arial, sans-serif; /* 设置字体为Arial，如果不可用则使用无衬线字体 */
+    background-color: #ffffff; /* 背景颜色设置为白色 */
+    margin: 0; /* 去除默认的外边距 */
+    padding: 0; /* 去除默认的内边距 */
+}
+/* 新闻轮播图 */
+.con_left{
+    float: left;
+    width: 425px;
+}
+/* 列表新闻 */
+.con_right{
+    float: right;
+    width: 550px;
+    margin-left: 20px;
+}
+.title{
+    line-height: 30px;
+    border-bottom: 1px solid #197395;
+    padding: 0 8px;
+}
+.title h2{
+    float: left;
+}
+.title a{
+    float: right;
+    color: #8c8c8c;
+    font-size: 18px;
+}
+.news_list li{
+    padding: 5px 8px 5px 10px;
+    border-bottom: 1px dashed #ececec;
+    background: url(../images/list_dot.jpg) left center no-repeat;
+    text-align: right;
+}
+.news_list li a{
+    float: left;
+}
+.adv{
+    margin: 10px 0;
+}
+.left_box{
+    padding: 5px;
+    border-bottom: 1px dashed #ccc;
+}
+.left_img{
+    float: left;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.left_con{
+    float: left;
+    width: 285px;
+    padding-left: 10px;
+}
+.right_img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.right_img li{
+    float: left;
+    margin-left: 20px;
+}
+.right_img li a{
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}

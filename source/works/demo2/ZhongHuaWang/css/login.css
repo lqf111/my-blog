@@ -1,0 +1,105 @@
+/* 设置整个页面的基本样式 */
+body {
+    font-family: Arial, sans-serif; /* 设置字体为Arial，如果不可用则使用无衬线字体 */
+    background-color: #ffffff; /* 背景颜色设置为白色 */
+    margin: 0; /* 去除默认的外边距 */
+    padding: 0; /* 去除默认的内边距 */
+}
+
+/* 设置.box类的样式，但此样式在当前代码片段中未使用 */
+.box{
+    height: 800px; /* 高度设置为800像素 */
+}
+
+/* 设置登录容器的样式 */
+.login-container {
+    width: 300px; /* 宽度设置为300像素 */
+    margin: 100px auto; /* 上下外边距为100像素，左右自动居中 */
+    padding: 20px; /* 内边距为20像素 */
+    background-color: #fff; /* 背景颜色设置为白色 */
+    border-radius: 10px; /* 边框圆角设置为10像素 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加轻微的阴影效果 */
+    position: absolute; /* 使用绝对定位 */
+    left: 60vw; /* 距离视口左侧60%的宽度 */ 
+    top: 150px; /* 距离视口顶部150像素 */ 
+}
+
+/* 设置欢迎信息的样式 */
+.welcome-message {
+    text-align: center; /* 文本居中对齐 */
+    margin-bottom: 20px; /* 下外边距为20像素 */
+}
+
+.welcome-message h1 {
+    color: #ff0000; /* 标题颜色设置为红色 */
+}
+
+.welcome-message p {
+    font-size: 14px; /* 字体大小设置为14像素 */
+    color: #555; /* 字体颜色设置为深灰色 */
+}
+
+/* 设置登录表单的样式 */
+.login-form {
+    margin-bottom: 20px; /* 下外边距为20像素 */
+}
+
+.login-form label {
+    display: block; /* 标签显示为块级元素 */
+    margin-bottom: 5px; /* 下外边距为5像素 */
+    font-weight: bold; /* 字体加粗 */
+}
+
+/* 设置输入框的样式 */
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: calc(100% - 22px); /* 宽度为父元素宽度的100%减去22像素（考虑边框和内边距） */
+    padding: 10px; /* 内边距为10像素 */
+    margin-bottom: 15px; /* 下外边距为15像素 */
+    border: 1px solid #ccc; /* 边框为1像素实线，颜色为浅灰色 */
+    border-radius: 5px; /* 边框圆角设置为5像素 */
+}
+
+/* 设置表单按钮区域的样式 */
+.form-buttons {
+    display: flex; /* 使用弹性布局 */
+    justify-content: space-between; /* 子元素之间的间隔相等 */
+    align-items: center; /* 子元素垂直居中对齐 */
+}
+
+/* 设置按钮和链接的样式 */
+.form-buttons button,
+.form-buttons a {
+    padding: 10px 20px; /* 内边距为10像素（上下）和20像素（左右） */
+    border: none; /* 去除边框 */
+    border-radius: 5px; /* 边框圆角设置为5像素 */
+    cursor: pointer; /* 鼠标悬停时显示为手型 */
+    text-decoration: none; /* 去除链接的下划线 */
+    color: #000000; /* 字体颜色设置为黑色 */
+}
+
+/* 设置按钮和链接悬停时的样式 */
+.form-buttons button:hover,
+.form-buttons a:hover {
+    background-color: #e0e0e0; /* 背景颜色设置为灰色 */
+    color: #000; /* 字体颜色保持为黑色 */
+}
+
+/* 设置复选框的样式 */
+.checkbox {
+    margin-bottom: 5px; /* 下外边距为5像素 */
+}
+
+.checkbox label {
+    font-weight: normal; /* 字体不加粗 */
+    /* margin-left: 5px; */ /* 此行被注释掉，表示不使用左外边距 */
+    display: inline-block; /* 显示为内联块级元素 */
+    vertical-align: middle; /* 垂直居中对齐 */
+}
+
+/* 设置页脚的样式 */
+.footer {
+    text-align: center; /* 文本居中对齐 */
+    font-size: 12px; /* 字体大小设置为12像素 */
+    color: #999; /* 字体颜色设置为浅灰色 */
+}

@@ -1,0 +1,105 @@
+/* 设置整个页面的基本样式 */
+body {
+    font-family: Arial, sans-serif; /* 设置字体为Arial，如果不可用则使用无衬线字体 */
+    background-color: #ffffff; /* 背景颜色设置为白色 */
+    margin: 0; /* 去除默认的外边距 */
+    padding: 0; /* 去除默认的内边距 */
+}
+.box {
+    height: 800px;
+}
+
+/* 设置注册容器的样式 */
+.registration-container {
+    background-color: #fff; /* 背景颜色为白色 */
+    padding: 20px; /* 内边距为20px */
+    border-radius: 8px; /* 边框圆角为8px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 盒子阴影效果 */
+    width: 300px; /* 宽度为350px */
+    /* float: right; 此行代码被注释掉，意味着不使用浮动布局 */
+    position: absolute; /* 使用绝对定位 */
+    left: 60vw; /* 距离视口左侧60%的视口宽度 */
+    top: 150px; /* 距离视口顶部150px */
+}
+
+/* 设置注册容器内h2标签的样式 */
+.registration-container h2 {
+    text-align: center; /* 文本居中对齐 */
+    margin-bottom: 20px; /* 下边距为20px */
+}
+
+/* 设置表单组的样式 */
+.form-group {
+    margin-bottom: 15px; /* 下边距为15px */
+    float: left; /* 使用左浮动布局，但这里可能需要根据实际布局需求调整 */
+}
+
+/* 设置表单组内label标签的样式 */
+.form-group label {
+    display: block; /* 设置为块级元素 */
+    margin-bottom: 5px; /* 下边距为5px */
+}
+
+/* 设置表单组内input输入框的样式 */
+.form-group input {
+    width: 100%; /* 宽度为父元素的100% */
+    padding: 8px; /* 内边距为8px */
+    box-sizing: border-box; /* 盒模型为border-box */
+    border: 1px solid #ccc; /* 边框为1px实线，颜色为#ccc */
+    border-radius: 4px; /* 边框圆角为4px */
+}
+
+/* 设置验证码组的样式 */
+.captcha-group .captcha-container {
+    display: flex; /* 使用弹性布局 */
+    align-items: center; /* 子元素在交叉轴方向居中对齐 */
+}
+
+/* 设置验证码组内span标签的样式 */
+.captcha-group .captcha-container span {
+    margin-right: 10px; /* 右侧外边距为10px */
+    font-size: 18px; /* 字体大小为18px */
+    font-weight: bold; /* 字体加粗 */
+}
+
+/* 设置验证码组内button按钮的样式 */
+.captcha-group .captcha-container button {
+    padding: 5px 10px; /* 内边距为5px 10px */
+    border: none; /* 无边框 */
+    background-color: #f8f8f8; /* 背景颜色为#f8f8f8 */
+    color: #000000; /* 字体颜色为黑色 */
+    cursor: pointer; /* 鼠标悬停时显示为手型 */
+    border-radius: 4px; /* 边框圆角为4px */
+}
+
+/* 设置短信验证码组的样式 */
+.sms-captcha-group input[type="text"] {
+    margin-right: 10px; /* 右侧外边距为10px，用于与按钮分隔 */
+}
+
+/* 设置短信验证码组内button按钮的样式 */
+.sms-captcha-group button {
+    padding: 5px 10px; /* 内边距为5px 10px */
+    border: none; /* 无边框 */
+    background-color: #f8f8f8; /* 背景颜色为#f8f8f8 */
+    color: #000000; /* 字体颜色为黑色 */
+    cursor: pointer; /* 鼠标悬停时显示为手型 */
+    border-radius: 4px; /* 边框圆角为4px */
+    /* disabled:gray; 此行代码仅为示意，实际应使用JavaScript控制按钮的禁用状态及其样式 */
+}
+
+/* 设置复选框的样式 */
+/* .checkbox {
+    margin-bottom: 5px; /* 下外边距为5像素 
+} */
+/* 设置提交按钮的样式 */
+button[type="submit"] {
+    width: 100%; /* 宽度为父元素的100% */
+    padding: 10px; /* 内边距为10px */
+    background-color: #28a745; /* 背景颜色为#28a745 */
+    color: #fff; /* 字体颜色为白色 */
+    border: none; /* 无边框 */
+    border-radius: 4px; /* 边框圆角为4px */
+    cursor: pointer; /* 鼠标悬停时显示为手型 */
+    font-size: 16px; /* 字体大小为16px */
+}
