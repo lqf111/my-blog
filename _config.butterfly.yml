@@ -64,10 +64,13 @@ avatar:
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img:
+# 默认顶部图（当文章没有封面时显示）
+default_top_img: https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1920&auto=format&fit=crop
 
 # The banner image of index page
-index_img:
+# 首页顶部图
+index_img: https://images.unsplash.com/photo-1506744626753-eda818c6cce7?q=80&w=1920&auto=format&fit=crop
+index_top_img_height: 100vh
 
 # The banner image of archive page
 archive_img:
@@ -284,14 +287,13 @@ aside:
     tag: true
     category: true
   card_author:
+  enable: true
+  description: 热爱前端与设计的初学者。这里是我们的数字花园。
+  button:
     enable: true
-    description:
-    button:
-      enable: true
-      icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/xxxxxx
-  card_announcement:
+    icon: fab fa-github
+    text: 关注我
+    link: https://github.com/lqf111
     enable: true
     content: This is my Blog
   card_recent_post:
@@ -872,17 +874,11 @@ canvas_fluttering_ribbon:
 
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
+# 粒子星空特效（二选一开启）
 canvas_nest:
-  enable: false
-  # Color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
-  color: '0,0,255'
-  # The opacity of line (0~1)
+  enable: true
+  color: '0,0,255' # 粒子颜色，默认蓝色
   opacity: 0.7
-  # The z-index property of the background
-  zIndex: -1
-  # The number of lines
-  count: 99
-  mobile: false
 
 # Mouse click effects: fireworks
 fireworks:

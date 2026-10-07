@@ -4,7 +4,14 @@
 
 # Site
 title: '六角'
-subtitle: '记录我们的学习与生活'
+subtitle:
+  enable: true
+  effect: true # 开启打字机特效
+  # 这里可以写多句话，轮播显示
+  sub:
+    - 记录我们的学习与生活
+    - 欢迎来到六角
+    - 探索代码与设计的边界
 description: ''
 keywords:
 author: 风筝
