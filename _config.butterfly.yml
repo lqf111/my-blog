@@ -68,7 +68,7 @@ default_top_img:
 
 # The banner image of index page
 # 首页顶部图
-index_img: https://images.unsplash.com/photo-1506744626753-eda818c6cce7?q=80&w=1920&auto=format&fit=crop
+index_img: https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1920&auto=format&fit=crop
 
 # The banner image of archive page
 archive_img:
