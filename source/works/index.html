@@ -2,193 +2,65 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的作品集</title>
-    <style>
-        /* 全局重置与基础设置 */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        }
-
-        body {
-            background-color: #f8f9fa; /* 柔和的浅灰色背景 */
-            color: #333;
-            padding: 40px 20px;
-        }
-
-        /* 容器 */
-        .works-container {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        /* 头部标题区 */
-        .works-header {
-            text-align: center;
-            margin-bottom: 50px;
-            animation: fadeInDown 0.8s ease-out;
-        }
-
-        .works-header h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 12px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .works-header p {
-            font-size: 1.1rem;
-            color: #6c757d;
-        }
-
-        /* 网格布局 */
-        .works-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 30px;
-        }
-
-        /* 卡片样式 */
-        .work-card {
-            background: #ffffff;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-            text-decoration: none;
-            color: inherit;
-            display: flex;
-            flex-direction: column;
-            animation: fadeInUp 0.8s ease-out backwards;
-        }
-
-        /* 卡片悬浮动效 */
-        .work-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        /* 卡片顶部的装饰渐变图 (代替缩略图) */
-        .card-img {
-            height: 160px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-size: 3rem;
-        }
-
-        /* 卡片内容区 */
-        .card-content {
-            padding: 24px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .card-content h3 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: #212529;
-        }
-
-        .card-content p {
-            font-size: 0.95rem;
-            color: #6c757d;
-            line-height: 1.6;
-            margin-bottom: 20px;
-            flex-grow: 1;
-        }
-
-        /* 标签 */
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .tags span {
-            background: #e9ecef;
-            color: #495057;
-            font-size: 0.75rem;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-weight: 500;
-        }
-
-        /* 动画定义 */
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* 暗黑模式适配 (可选) */
-        @media (prefers-color-scheme: dark) {
-            body { background-color: #121212; color: #e0e0e0; }
-            .work-card { background: #1e1e1e; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
-            .work-card:hover { box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); }
-            .card-content h3 { color: #ffffff; }
-            .tags span { background: #2d2d2d; color: #b0b0b0; }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="风筝的网页作品与前端练习">
+    <title>我的作品 | 风筝的博客</title>
+    <link rel="stylesheet" href="/works/style.css?v=20261010-2345">
 </head>
 <body>
+    <main class="works-container">
+        <nav class="works-nav" aria-label="主导航">
+            <a href="/">博客首页</a>
+            <a href="/archives/">归档</a>
+            <a href="/categories/">分类</a>
+            <a href="/tags/">标签</a>
+            <a href="/photos/">相册</a>
+            <a href="/links/">链接</a>
+        </nav>
 
-<div class="works-container">
-    <div class="works-header">
-        <h1>我的作品集</h1>
-        <p>记录学习与设计的探索轨迹</p>
-    </div>
+        <header class="works-header">
+            <p class="eyebrow">SELECTED PROJECTS</p>
+            <h1>我的作品</h1>
+            <p>这里收录了我做过的网页项目和前端练习，点击卡片可以直接体验。</p>
+        </header>
 
-    <div class="works-grid">
-        
-        <!-- 卡片 1：三农网站 -->
-        <a href="/works/demo1/sannong/" class="work-card" style="animation-delay: 0.1s;">
-            <div class="card-img" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                <i class="fas fa-leaf"></i> <!-- 使用图标，如果你的博客没引入图标，这行可能不显示，不影响布局 -->
-            </div>
-            <div class="card-content">
-                <h3>三农网站</h3>
-                <p>HTML/CSS 基础布局练习，包含响应式设计、登录与注册页面的完整实践。</p>
-                <div class="tags">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>响应式</span>
+        <section class="works-grid" aria-label="作品列表">
+            <article class="work-card">
+                <a class="card-img" href="/works/demo1/sannong/index.html" aria-label="打开农业口碑网站">
+                    <img src="/works/demo1/sannong/images/xlBanner.png" alt="农业口碑网站首页横幅" loading="lazy">
+                    <span class="project-number">01</span>
+                </a>
+                <div class="card-content">
+                    <p class="project-type">网页设计 · 综合练习</p>
+                    <h2>农业口碑网站</h2>
+                    <p>以农业资讯为主题的多页面网站，包含首页轮播、栏目页面以及登录和注册页面。</p>
+                    <div class="tags" aria-label="技术标签">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <a class="project-link" href="/works/demo1/sannong/index.html">查看项目 <span aria-hidden="true">↗</span></a>
                 </div>
-            </div>
-        </a>
+            </article>
 
-        <!-- 卡片 2：中华网 -->
-        <a href="/works/demo2/ZhongHuaWang/" class="work-card" style="animation-delay: 0.2s;">
-            <div class="card-img" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                <i class="fas fa-globe"></i>
-            </div>
-            <div class="card-content">
-                <h3>中华网</h3>
-                <p>网页设计课程实践，包含视频播放、新闻列表与详情页，整体交互非常丰富。</p>
-                <div class="tags">
-                    <span>HTML5</span>
-                    <span>jQuery</span>
-                    <span>Video</span>
+            <article class="work-card">
+                <a class="card-img card-img--news" href="/works/demo2/ZhongHuaWang/index.html" aria-label="打开中华网新闻门户页面">
+                    <img src="/works/demo2/ZhongHuaWang/images/logo1.jpeg" alt="中华网网站标志" loading="lazy">
+                    <span class="project-number">02</span>
+                </a>
+                <div class="card-content">
+                    <p class="project-type">新闻门户 · 页面练习</p>
+                    <h2>中华网新闻门户</h2>
+                    <p>仿新闻门户布局的多页面练习，包含新闻首页、新闻列表、详情页及登录注册页面。</p>
+                    <div class="tags" aria-label="技术标签">
+                        <span>HTML</span><span>CSS</span><span>jQuery</span>
+                    </div>
+                    <a class="project-link" href="/works/demo2/ZhongHuaWang/index.html">查看项目 <span aria-hidden="true">↗</span></a>
                 </div>
-            </div>
-        </a>
+            </article>
+        </section>
 
-        <!-- 未来添加新卡片，就复制上面 <a>...</a> 的部分，改一下链接和文字即可 -->
-        
-    </div>
-</div>
-
+        <footer class="works-footer">
+            <a href="/">返回博客首页</a>
+        </footer>
+    </main>
 </body>
 </html>

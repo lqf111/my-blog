@@ -3,24 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: '六角'
-subtitle:
-  enable: true
-  effect: true # 开启打字机特效
-  # 这里可以写多句话，轮播显示
-  sub:
-    - 记录我们的学习与生活
-    - 欢迎来到六角
-    - 探索代码与设计的边界
-description: ''
-keywords:
+title: '风筝的博客'
+subtitle: '记录前端、Python 与日常'
+description: '记录前端学习、Python 工具和日常生活。'
+keywords: '前端, Python, 个人博客'
 author: 风筝
-language: en
+language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://my-blog-a9r.pages.dev
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -35,7 +28,8 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: ['works/**']
+skip_render:
+  - 'works/**'
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -70,6 +64,12 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
+
+search:
+  path: search.json
+  field: all
+  content: true
+  format: striptags
 
 # Category & Tag
 default_category: uncategorized
